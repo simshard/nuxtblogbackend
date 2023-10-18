@@ -14,7 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return ['Laravel' => app()->version()];
+    return ['Laravel' => app()->version(),
+    'Nuxt Demo blog' =>'Hello World ',
+    ];
+   // return '<h1>hello Sim</h1>';
 });
 
 require __DIR__.'/auth.php';
